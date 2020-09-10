@@ -3,7 +3,24 @@ h1 {
     font-weight: 500;
 }
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: dimgrey;
+
+}
+
 p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+navbar {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
     font-family: 'Roboto', sans-serif;
 
 }

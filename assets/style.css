@@ -16,7 +16,7 @@ p {
 
 }
 
-navbar {
+.navbar {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,3 +24,8 @@ a {
     font-family: 'Roboto', sans-serif;
 
 }
+
+body {
+    background-image: url("background.jpg");
+    
+  }

@@ -1,3 +1,5 @@
+
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -28,4 +30,38 @@ a {
 body {
     background-image: url("background.jpg");
     
+  }
+  input[type=text], select, textarea {
+    font-family: 'Roboto', sans-serif;  
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    font-family: 'Roboto', sans-serif;
+    background-color: #6e6e6e;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    font-family: 'Roboto', sans-serif;
+    background-color: #363636;
+  }
+  
+  #contact {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2em;  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }

@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c417eb9b22.js" crossorigin="anonymous"></script>
     <title>Robert Cullen-Keel: Portfolio</title>
   </head>
-  <body>
+<body>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-md-center justify-content-start navbar-expand-sm">
         <div class="navbar-collapse collapse align-items-left w-100" id="name">
         <img src="assets/r.png" width="200" height="30" alt="">
@@ -44,19 +44,19 @@
         <div class="row">
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/01.jpeg" class="portrait">
+                <img src="assets/gallery/01.jpeg" class="portrait" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/02.jpeg" alt=" " class="portrait">
+                <img src="assets/gallery/02.jpeg" class="portrait" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/03.jpeg" alt="Fjords" class="portrait">
+                <img src="assets/gallery/03.jpeg" class="portrait" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
@@ -64,19 +64,19 @@
         <div class="row">
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/04.jpeg" alt=" " class="landscape">
+                <img src="assets/gallery/04.jpeg" class="landscape" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/05.jpeg" alt=" " class="landscape">
+                <img src="assets/gallery/05.jpeg" class="landscape" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/06.jpeg" alt="Fjords" class="landscape">
+                <img src="assets/gallery/06.jpeg" class="landscape" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
@@ -84,27 +84,123 @@
         <div class="row">
             <div class="col-md-4 col-sm-12">
             <div class="thumbnail">
-                <img src="assets/gallery/07.jpeg" alt=" " class="portrait">
+                <img src="assets/gallery/07.jpeg" class="portrait" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/08.jpeg" alt=" " class="landscape">
+                <img src="assets/gallery/08.jpeg" class="landscape" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
             <div class="col-md-4">
             <div class="thumbnail">
-                <img src="assets/gallery/09.jpeg" alt="Fjords" class="landscape">
+                <img src="assets/gallery/09.jpeg" class="landscape" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
                 </a>
             </div>
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="assets/gallery/01.jpeg" style="width:100%" class="portrait">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="assets/gallery/02.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="assets/gallery/03.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="assets/gallery/04.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="assets/gallery/05.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="assets/gallery/06.jpeg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="assets/gallery/07.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="assets/gallery/08.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="assets/gallery/09.jpeg" style="width:100%">
+      </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>

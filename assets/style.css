@@ -16,9 +16,18 @@ h2 {
     color: dimgrey;
 
 }
-
+small {
+  color: #ccc;
+}
 img {
   margin-bottom: -4px;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 2px;
+  margin-right: 10px;
 }
 
 #headshot {

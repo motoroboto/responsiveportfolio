@@ -1,0 +1,1 @@
+This project is a sample portfolio that utlizes a responsive design so it can be easily accessed on any device. It follows semantic layout and utilizes the bootstrap grid system. I also included a lighbox for veiwing images in the portfolio page.
